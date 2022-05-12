@@ -1,0 +1,557 @@
+body {
+    width: 1920px;
+    height: 3000px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.izo1 {
+    position: absolute;
+    width: 1110px;
+    height: 0px;
+    left: 405px;
+    top: 70px;
+    
+    border: 1px solid #FFFFFF;
+}
+.izo2 {
+    position: absolute;
+    width: 1110px;
+    height: 0px;
+    left: -1px;
+    top: 50px;
+
+    border: 1px solid #FFFFFF;
+}
+.izo3 {
+    position: absolute;
+    width: 46px;
+    height: 0px;
+    left: 175px;
+    top: -27px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+.izo4 {
+    position: absolute;
+    width: 46px;
+    height: 0px;
+    left: -1px;
+    top: -350px;
+
+    border: 1px solid  #fff;
+    transform: rotate(1deg);    
+}
+.izo5 {
+    position: absolute;
+    width: 46px;
+    height: 0px;
+    left: -7px;
+    top: -360px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(-1deg);
+}
+.slk-menu {
+    margin-left: 480px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+.slk-menu2 {
+    margin-left: 180px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+}
+.slk-menu3{
+    margin-left: 265px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+}
+.slk-menu4 {
+    margin-left: 190px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+}
+.mine-menu {
+    margin-top: -817px;
+}
+.textp {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -70px;
+    margin-left: 405px;
+}
+.textp2 {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -30px;
+    margin-left: 1405px;
+}
+.slk-menu:hover {
+    text-decoration: underline;
+}
+.slk-menu2:hover {
+    text-decoration: underline;
+}
+.slk-menu3:hover {
+    text-decoration: underline;
+}
+.slk-menu4:hover {
+    text-decoration: underline;
+}
+.dws {
+    margin-top: 560px;
+    margin-left: 700px;
+}
+.dws2 {
+    margin-top: -21px;
+    margin-left: 950px;
+}
+.js-open-modal {
+    width: 203px;
+    height: 50px;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #99862A;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.js-open-modal {
+    width: 203px;
+    height: 50px;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #99862A;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.butt:hover {
+    background: #807127;
+    text-decoration: underline;
+}
+.butt2:hover {
+    background: #807127;
+    text-decoration: underline;
+}
+.block2 {
+    width: 1920px;
+    height: 950px;
+    background-color: #282828;
+}
+.img-block-2 {
+    padding-top: 90px;
+}
+/* Другое!!!!!!! */
+
+/* Стили для подложки */
+
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ 
+ .modal {
+    
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+ 
+ 
+ /* Стили для активных классов подложки и окна */
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ 
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+ .text-im {
+     color: black;
+     font-family: 'Montserrat', sans-serif;
+ }
+.name {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.email {
+    padding-top: 90px;
+}
+.eml {
+    padding-top: 20px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.pol {
+    margin-left: -180px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.pil {
+    margin-top: 25px;
+}
+.inapti {
+    margin-top: -28px;
+    margin-left: -25px;
+}
+.cls {
+    font-size: 16px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.country {
+    margin-top: 20px;
+}
+/* Кнопка */
+ .butt {
+     margin-top: 30px;
+     margin-left: 150px;
+    text-decoration: none;
+    border: 3px solid #218294;
+    font-size: 20px;
+    color: #218294;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    height: 55px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+.butt::before,
+.butt::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #218294;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+.butt::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+.butt:hover {
+    color: #fff;
+}
+.butt:hover::before,
+.butt:hover::after {
+    left: 0;
+}
+.block3 {
+    position: absolute;
+    width: 1920px;
+    height: 1038px;
+
+background: #E6E3C4;
+}
+.pril {
+    position: absolute;
+width: 1110px;
+height: 0px;
+top: 100px;
+left: 405px;
+
+/* accent */
+
+border: 1px solid #998431;
+}
+.prel {
+    position: absolute;
+width: 1110px;
+height: 0px;
+top: 970px;
+left: 405px;
+
+/* accent */
+
+border: 1px solid #998431;
+}
+.slider-block5 {
+    margin-top: 160px;
+    margin-left: 976px;
+}
+.nvk {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    margin-left: 404px;
+    margin-top: -774px;
+}
+.kar {
+    position: absolute;
+    width: 298px;
+    height: 108px;
+    font-size: 36px;
+    line-height: 150%;
+    margin-top: 10px;
+    margin-left: 404px;
+    color: #282828;
+}
+.jeck {
+    position: absolute;
+width: 160px;
+height: 0px;
+left: 405px;
+top: 330px;
+
+/* black */
+
+background: #282828;
+/* black */
+
+border: 1px solid #282828;
+}
+.titule {
+    position: absolute;
+width: 445px;
+height: 84px;
+left: 405px;
+top: 355px;
+
+/* text / 14r */
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+
+/* black */
+
+color: #282828;
+}
+.tabl {
+    margin-top: 290px;
+    margin-left: 404px;
+}
+.titul {
+    position: absolute;
+width: 445px;
+height: 84px;
+left: 404px;
+top: 720px;
+
+/* text / 14r */
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+
+/* black */
+
+color: #282828;
+}
+.btn-block3 {
+    position: static;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    
+    border: 1px solid #998431;
+    position: absolute;
+    width: 254px;
+    height: 50px;
+    left: 404x;
+    top: 604px;
+    margin-left: 404px;
+    margin-top: 266px; 
+
+/* accent */
+
+background: #998431;
+}
+.text-btn {
+    color: #fff;
+    text-decoration: none;   
+}
+.block4 {
+    margin-top: 1000px;
+    background-color: #282828;
+    position: absolute;
+    width: 1920px;
+    height: 767px;
+}
+.poloski {
+    position: absolute;
+    width: 1110px;
+    height: 538px;
+    left: 405px;
+    top: 103px;
+
+    border: 3px solid #C4C4C4;
+    box-sizing: border-box;    
+}
+.vino {
+    z-index: 1;
+    position: absolute;
+    margin-left: 380px;
+    overflow: hidden;
+}
+.bochka {
+    margin-left: 1260px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 40px;
+}
+.h1-block-4 {
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-size: 36px;
+    margin-left: 780px;
+}
+.ptextbl {
+    position: absolute;
+width: 539px;
+height: 72px;
+left: 691px;
+top: 128px;
+
+/* text / 16r */
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+}
+/* Форма */
+.formblock4 {
+    position: absolute;
+    z-index: 1;
+    margin-left: 620px;
+    margin-top: 250px;
+}
+.names {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.text-names {
+    width: 250px;
+    height: 25px;
+}
+.emli {
+    margin-left: 370px;
+    margin-top: -30px;
+}
+.text-email {
+    width: 250px;
+    height: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.email {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-form {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #282828;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 13px 279px;
+    margin-top: 45px;
+    margin-left: 5.5%;
+}
+.btn-form-text {
+    color: #fff;
+    text-decoration: none;
+}
